@@ -2,9 +2,9 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import CoreServices from "./Components/CoreServices";
-import CustomerSection from "./Constants/CustomerSections"
-import MagicNumbers from "./Constants/MagicNumbers";
+import CoreServices from "./components/CoreServices";
+import CustomerSection from "./constants/CustomerSections";
+import MagicNumbers from "./constants/MagicNumbers";
 
 export default function Layout() {
   return (
@@ -12,11 +12,8 @@ export default function Layout() {
       <Header />
       <main>
         <Outlet />
-
         <CoreServices />
-
         <CustomerSection />
-
         <MagicNumbers />
       </main>
       <Footer />
